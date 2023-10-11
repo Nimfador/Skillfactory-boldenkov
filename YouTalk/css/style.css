@@ -46,12 +46,15 @@ body{
     cursor: pointer;
     font-family: 'Montserrat-Bold';
 }
+.header__burger-menu{
+    display: none;
+}
 
 
 /*iPad Pro 12.9"*/
 @media (max-width: 1024px) {
     .header{
-        width: 1440px;
+        width: 1024px;
     }
     .header__img{
         margin-right: 32px;
@@ -73,15 +76,19 @@ body{
         width: 768px;
     }
     .header__img{
-        margin-right: 32px;
+        margin-right: 0;
+        margin-left: 20px;
     }
     .header__link{
         margin-right: 16px;
     }
     .header__link_img{
-        margin-left: 4px;
+        display: none;
     }
     .header__button{
-        margin-left: 20px;
+        display: none;
+    }
+    .header__burger-menu{
+        display: flex;
     }
 }
