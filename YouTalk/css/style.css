@@ -1,6 +1,5 @@
 body{
     margin: 0;
-    font-family: Montserrat;
 }
 .header{
     width: 1440px;
@@ -20,7 +19,7 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
+    font-family: 'Montserrat-Medium';
 }
 .header__link{
     text-decoration: none;
@@ -45,7 +44,7 @@ body{
     color: #03B2A5;
     padding: 14px 20px 14px 20px;
     cursor: pointer;
-
+    font-family: 'Montserrat-Bold';
 }
 
 
