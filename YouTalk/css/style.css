@@ -20,7 +20,6 @@ body{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    font-family: 'Montserrat-Medium';
 }
 .header__link{
     text-decoration: none;
@@ -45,7 +44,7 @@ body{
     color: #03B2A5;
     padding: 14px 20px 14px 20px;
     cursor: pointer;
-    font-family: 'Montserrat-Bold';
+   
 }
 .header__burger-menu{
     display: none;
@@ -76,14 +75,7 @@ body{
     .header{
         width: 768px;
     }
-    .header__img{
-        margin-right: 0;
-        margin-left: 20px;
-    }
-    .header__link{
-        margin-right: 16px;
-    }
-    .header__link_img{
+    .header__nav{
         display: none;
     }
     .header__button{
