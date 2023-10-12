@@ -1,16 +1,18 @@
 @font-face {
     font-family: 'Montserrat-Medium';
     font-style: normal;
-    src: 
-        url("Montserrat-Medium") format("woff2"),
-        url("Montserrat-Medium") format("woff"),
-        url("Montserrat-Medium") format("ttf");
+    font-weight: 400;
+    src: local("Montserrat"),
+        url("/YouTalk/fonts/Montserrat-Medium.woff2") format("woff2"),
+        url("/YouTalk/fonts/Montserrat-Medium.woff") format("woff"),
+        url("/YouTalk/fonts/Montserrat-Medium.ttf") format("ttf");
 }
 @font-face {
     font-family: 'Montserrat-Bold';
     font-style: normal;
-    src: 
-        url("Montserrat-Bold") format("woff2"),
-        url("Montserrat-Bold") format("woff"),
-        url("Montserrat-Bold") format("ttf");
+    font-weight: 700;
+    src: local("Montserrat"),
+        url("/YouTalk/fonts/Montserrat-Bold.woff2") format("woff2"),
+        url("/YouTalk/fonts/Montserrat-Bold.woff") format("woff"),
+        url("/YouTalk/fonts/Montserrat-Bold.ttf") format("ttf");
 }
