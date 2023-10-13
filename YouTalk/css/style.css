@@ -71,7 +71,7 @@ body{
 }
 
 /*iPad mini - 2*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .header{
         width: 768px;
     }
@@ -83,5 +83,42 @@ body{
     }
     .header__burger-menu{
         display: flex;
+        position: absolute;
+        right: 20px;
+    }
+    .header__img{
+        margin-right: 0px;
+        position: absolute;
+        left: 20px;
+    }
+}
+
+/*iPhone 11 Pro Max - 2*/
+@media only screen and (max-width: 414px) {
+    .header{
+        width: 414px;
+        height: 72px;
+    }
+    .header__burger-menu{
+        right: 24px;
+    }
+    .header__img{
+        left: 24px;
+        width: 48px;
+        height: 34px;
+    }
+}
+
+/*iPhone SE*/
+@media only screen and (max-width: 320px) {
+    .header{
+        width: 320px;
+        height: 56px;
+    }
+    .header__burger-menu{
+        right: 8px;
+    }
+    .header__img{
+        left: 16px;
     }
 }
