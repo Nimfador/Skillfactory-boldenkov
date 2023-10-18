@@ -49,7 +49,70 @@ body{
 .header__burger-menu{
     display: none;
 }
-
+.main{
+    display: flex;
+    flex-flow: column wrap;
+}
+.main__nav{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 126px;
+    margin-top: 16px;
+}
+.main__link{
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 12px;
+    margin-right: 8px;
+}
+.main__title{
+    color: #333333;
+    font-weight: bold;
+    font-size: 48px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.main__filters{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 120px;
+    margin-right: 140px;
+    margin-top: 32px;
+}
+.main__filters_item{
+    border: solid 1px #C1C5CD;
+    border-radius: 24px;
+    padding: 6px 8px 6px 8px;
+    margin-right: 8px;
+}
+.main__filters_item:nth-child(3){
+    border: solid 2px #16C8BB;
+}
+.main__wrap{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 120px;
+    margin-right: 120px;
+    justify-content:space-between;
+}
+.main__card{
+    height: 499px;
+    width: 588px;
+    border-radius: 16px;
+    border: solid 1px #DEDEDE;
+    margin-top: 24px;
+}
+.main__card img{
+    border-radius: 16px 16px 0px 0px;
+}
+.main__card_filter{
+    
+    top: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 1px #C1C5CD;
+    border-radius: 24px;
+    padding: 6px 8px 6px 8px;
+}
 
 /*iPad Pro 12.9"*/
 @media (max-width: 1024px) {
