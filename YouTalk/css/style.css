@@ -1,18 +1,139 @@
-body{
-    margin: 0;
-    font-family: 'Montserrat';
+*{
+    box-sizing: border-box;
 }
-.header{
-    width: 1440px;
-    height: 76px;
+body{
+    font-family: 'Montserrat',sans-serif;
+    position: relative;
+    color: #333;
+    font-weight: 400;
+    text-align: left;
+}
+.root{
+    height: calc(var(--vh, 1vh)*100);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    width: 100vw;
+    display: block;
+}
+.root__header{
     background-color: #ffffff;
     border-bottom: solid 1px #EFF5FB;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    padding: 14px 0;
 }
-.header__img{
+.root__container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+}
+@media (min-width: 1440px) {
+    .root__container{
+        max-width: 1224px;
+    }
+}
+
+.root__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.root__designer-col{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.root__header_wrap{
+    align-items: center;
+    display: flex;
+    height: 48px;
+}
+.root__header_logo{
+    display: inline-block;
+    height: 36px;
+    margin-right: 50px;
+    min-width: 51px;
+    position: relative;
+    width: 51px;
+    z-index: 1;
+    cursor: pointer;
+    color: #2963a3;
+    text-decoration: none;
+    background-color: transparent;
+}
+.root__header_logo img{
+    display: inline-block;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+}
+.root__header_nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    transition: opacity .3s ease,transform .2s ease;
+    width: 100%;
+}
+.root__header_nav_list{
+    align-items: center;
+    display: flex;
+    height: 16px;
+    position: relative;
+    z-index: 2;
+    list-style-type: none;
+}
+.root__header_nav_list_item{
+    display: inline-block;
+    margin-right: 30px;
+
+}
+.root__header_nav_list_item a{
+    color: #333;
+    display: inline-block;
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    line-height: 16px;
+    text-decoration: none;
+    transition: color .2s ease,background-color .2s ease;
+    cursor: pointer;
+    background-color: transparent;
+}
+.root__header_button{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 12px;
+}
+.root__header_button_link{
+    align-items: center;
+    background: #e3f5f5;
+    border: 1px solid #e3f5f5;
+    border-radius: 4px;
+    color: #03b2a5;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 13px 18px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s ease,border-color .2s ease,color .2s ease;
+}
+/*.header__img{
     margin-right: 51px;
     cursor: pointer;
 }
@@ -60,10 +181,14 @@ body{
     margin-top: 16px;
 }
 .main__link{
+    display: flex;
     text-decoration: none;
     color: rgba(51, 51, 51, 0.7);
     font-size: 12px;
     margin-right: 8px;
+}
+.main__link img{
+    margin-left: 4px;
 }
 .main__title{
     color: #333333;
@@ -80,6 +205,7 @@ body{
     margin-top: 32px;
 }
 .main__filters_item{
+    display: flex;
     border: solid 1px #C1C5CD;
     border-radius: 24px;
     padding: 6px 8px 6px 8px;
@@ -114,8 +240,15 @@ body{
     padding: 6px 8px 6px 8px;
 }
 
+
+.footer{
+    height: 302px;
+    width: 1440px;
+    background-color: #2963A3;
+}
+*/
 /*iPad Pro 12.9"*/
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
     .header{
         width: 1024px;
     }
@@ -132,9 +265,9 @@ body{
         margin-left: 20px;
     }
 }
-
+*/
 /*iPad mini - 2*/
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
     .header{
         width: 768px;
     }
@@ -155,9 +288,9 @@ body{
         left: 20px;
     }
 }
-
+*/
 /*iPhone 11 Pro Max - 2*/
-@media only screen and (max-width: 414px) {
+/*@media only screen and (max-width: 414px) {
     .header{
         width: 414px;
         height: 72px;
@@ -171,9 +304,9 @@ body{
         height: 34px;
     }
 }
-
+*/
 /*iPhone SE*/
-@media only screen and (max-width: 320px) {
+/*@media only screen and (max-width: 320px) {
     .header{
         width: 320px;
         height: 56px;
@@ -184,4 +317,4 @@ body{
     .header__img{
         left: 16px;
     }
-}
+}*/
